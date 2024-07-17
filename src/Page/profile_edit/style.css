@@ -1,0 +1,341 @@
+/* EditProfile.css */
+
+.EditProfile {
+    font-family: 'Cafe24Ssurround';
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  
+  .EditProfile .container {
+    width: calc(100% - 30px);
+    max-width: 400px;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 15px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+    margin-top: 0.3vh;
+    height: calc(var(--vh, 1vh) * 85);
+  }
+  
+  .EditProfile .header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .EditProfile .header h1 {
+    font-family: 'RixInooAriDuriR';
+    font-size: 24px;
+    margin: 0;
+    margin-left: 10px;
+  }
+  
+  .EditProfile .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .EditProfile input[type='text'],
+  .EditProfile input[type='password'] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-family: 'Cafe24Ssurround';
+  }
+  
+  .EditProfile input[type='file'] {
+    margin-bottom: 15px;
+  }
+  
+  .EditProfile button {
+    font-family: 'RixInooAriDuriR';
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4dd0e1;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 15px;
+  }
+  
+  .EditProfile button:hover {
+    background-color: #00796b;
+  }
+
+  /* EditProfile.css */
+
+/* ... 이전 스타일 코드 ... */
+
+.EditProfile .profile-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .EditProfile .avatar-container {
+    position: relative;
+    margin-right: 20px;
+  }
+  
+  .EditProfile .avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .EditProfile .change-image-label {
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #4dd0e1;
+    color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  .EditProfile .info-container {
+    flex: 1;
+  }
+  
+  .EditProfile .info-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 24px;
+    justify-items: first baseline;
+  }
+  
+  .EditProfile .info-item label {
+    font-weight: bold;
+    margin-right: 10px;
+    width: 60px;
+  }
+  
+  .EditProfile .info-item input[type='text'] {
+    flex: 1;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: 'Cafe24Ssurround';
+  }
+
+  
+  .EditProfile .save-button,
+  .EditProfile .edit-button,
+  .EditProfile .logout-button,
+  .EditProfile .withdrawal-button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  /* EditProfile.css */
+
+/* ... 기존 스타일 코드 유지 ... */
+
+.EditProfile .profile-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .EditProfile .avatar-container {
+    position: relative;
+    margin-right: 0;
+  }
+  
+  .EditProfile .avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .EditProfile .change-image-label {
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #4dd0e1;
+    color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  .EditProfile .profile-details {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .EditProfile .profile-details p {
+    margin: 5px 0;
+    font-size: x-large;
+  }
+  
+  .EditProfile .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .EditProfile .form input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-family: 'Cafe24Ssurround';
+  }
+  
+  .EditProfile .creators-button {
+    font-family: 'RixInooAriDuriR';
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4dd0e1;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  
+  .EditProfile .creators-button:hover {
+    background-color: #00796b;
+  }
+  
+  .EditProfile .info-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  
+  .EditProfile .info-item label {
+    font-weight: bold;
+    margin-right: 10px;
+    width: 80px;
+  }
+  
+  .EditProfile .info-item span {
+    flex: 1;
+  }
+  
+  .EditProfile .modal-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .EditProfile .modal-content input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-family: 'Cafe24Ssurround';
+  }
+
+  .EditProfile .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    font-family: 'Cafe24Ssurround';
+  }
+  
+  .EditProfile .modal-content {
+    background-color: #ffffff;
+    width: 80%;
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .EditProfile .modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .EditProfile .modal-header h2 {
+    font-size: 20px;
+    margin: 0;
+  }
+  
+  .EditProfile .close-button {
+    background-color: transparent;
+    border: none;
+    color: #004d40;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  .EditProfile .modal-body {
+    margin-bottom: 20px;
+  }
+  
+  .EditProfile .modal-body input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-family: 'Cafe24Ssurround';
+  }
+  
+  .EditProfile  .modal-footer {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .EditProfile .modal-footer button {
+    font-family: 'RixInooAriDuriR';
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4dd0e1;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .EditProfile  .modal-footer button:hover {
+    background-color: #00796b;
+  }

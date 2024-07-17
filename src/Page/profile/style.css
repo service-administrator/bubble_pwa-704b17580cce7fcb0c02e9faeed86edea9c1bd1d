@@ -1,0 +1,268 @@
+
+.ProfilePage {
+    font-family: 'Cafe24Ssurround';
+}
+.ProfilePage .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    position: relative;
+}
+.ProfilePage .header h1 {
+    font-family: 'RixInooAriDuriR';
+    font-size: 24px;
+    margin: 0;
+}
+.ProfilePage .settings {
+    background-color: #4dd0e1;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 20%;
+    font-size: 14px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.ProfilePage .profile-info {
+    display: inline-flex;
+    align-items: center;
+    text-align: left;
+    margin-bottom: 20px;
+}
+.ProfilePage .logo-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.ProfilePage .logo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.ProfilePage .status-message {
+    font-size: 13px;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 20px;
+    margin-top: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    width: 80px;
+    text-align: center;
+    position: relative;
+}
+.ProfilePage .status-message::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -10px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent #ffffff transparent transparent;
+    transform: translateY(-50%);
+}
+.ProfilePage .profile-details {
+    margin-left: 20px;
+    flex-grow: 1;
+}
+.ProfilePage .profile-details p {
+    font-size: 20px;
+    margin: 5px 0;
+}
+.ProfilePage .profile-details .friends {
+    font-size: 18px;
+    color: #00796b;
+    margin-top: 10px;
+}
+.ProfilePage .friends .count {
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    display: inline-block;
+}
+.ProfilePage .questions {
+    background-color: #4dd0e1;
+    color: #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+
+
+.friends-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    font-family: 'Cafe24Ssurround';
+  }
+  
+  .friends-modal .modal-content {
+    background-color: #ffffff;
+    width: 80%;
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .friends-modal .modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .friends-modal .modal-header h2 {
+    font-size: 20px;
+    margin: 0;
+  }
+  
+  .friends-modal .modal-header button {
+    background-color: #4dd0e1;
+    border: none;
+    color: #ffffff;
+    font-size: 16px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Cafe24Ssurround';
+  }
+
+  .friends-modal .modal-body {
+    max-height: 400px;
+    overflow-y: auto;
+  }
+  
+  .friends-modal .friend-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .friends-modal .friend-info {
+    display: flex;
+    align-items: center;
+  }
+  
+  .friends-modal .friend-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .friends-modal .friend-details {
+    display: grid;
+    flex-direction:column;
+    justify-items: flex-start;
+  }
+  
+  .friends-modal .friend-name {
+    font-weight: bold;
+  }
+  
+  .friends-modal .friend-username {
+    color: #757575;
+  }
+  
+ .friends-modal .friend-item button {
+  background-color: #4dd0e1;
+  color: #ffffff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Cafe24Ssurround';
+}
+
+.ProfilePage .add-friend-bar {
+  width: 100%;
+  background-color: #4dd0e1;
+  color: #ffffff;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: none;
+  cursor: pointer;
+  font-family: 'Cafe24Ssurround';
+  font-size: 18px;
+  transition: background-color 0.3s;
+}
+
+.ProfilePage .add-friend-bar.pending {
+  background-color: #bdbdbd;
+  cursor: not-allowed;
+}
+
+.ProfilePage .add-friend-bar.unfriend {
+  background-color: #f44336;
+}
+
+.ProfilePage .section-separator {
+  padding: 10px;
+  background-color: #e0f7fa;
+  color: #004d40;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ProfilePage .no-fav-bubbles {
+  text-align: center;
+  color: #757575;
+  margin-bottom: 15px;
+}
+
+/* ... 생략 ... */
+
+.ProfilePage .friend-actions {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  gap: 10px;
+}
+
+.ProfilePage .message-button {
+  width: 100%;
+  background-color: #4dd0e1;
+  color: #ffffff;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: none;
+  cursor: pointer;
+  font-family: 'Cafe24Ssurround';
+  font-size: 18px;
+}
+
+.ProfilePage .message-button:hover {
+  background-color: #00796b;
+}
+
+/* ... 생략 ... */

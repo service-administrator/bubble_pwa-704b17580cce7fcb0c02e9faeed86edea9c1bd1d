@@ -1,0 +1,137 @@
+
+.Bubbles {
+    font-family: 'Cafe24Ssurround';
+}
+
+.Bubbles .nobubble{
+    opacity: 0.5;
+    font-size: x-large;
+}
+
+.Bubbles .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    position: relative;
+}
+.Bubbles .header h1 {
+    font-family: 'RixInooAriDuriR';
+    font-size: 24px;
+    margin: 0;
+}
+
+.Bubbles .sort-options-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0px;
+    box-sizing: border-box;
+    z-index: 999; /* 다른 요소들 위에 있도록 설정 */
+}
+.Bubbles .sort-options, .question-settings {
+    background-color: #4dd0e1;
+    color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.Bubbles .question-container {
+    overflow-y: scroll; /* 질문 목록만 스크롤 */
+    height: calc(var(--vh, 1vh) * 75);
+}
+.Bubbles .question-container::-webkit-scrollbar {
+    width: 8px;
+}
+.Bubbles .question-container::-webkit-scrollbar-thumb {
+    background-color: #4dd0e1;
+    border-radius: 4px;
+}
+.Bubbles .question-container::-webkit-scrollbar-track {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+.Bubbles .question {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: calc(var(--vh, 1vh) * 1);
+    text-align: left;
+    position: relative;
+}
+.Bubbles .question .profile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.Bubbles .question .profile .avatar {
+    background-color: #4dd0e1;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+.Bubbles .question .profile .details {
+    font-size: 14px;
+    line-height: 1.2; /* 줄 간격 줄이기 */
+}
+.Bubbles .question .profile .details p {
+    margin: 0;
+}
+.Bubbles .question .content {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.Bubbles .question .meta {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
+.Bubbles .question .meta .time {
+    color: #757575;
+}
+.Bubbles .create-post-button {
+    background-color: #4dd0e1;
+    color: #ffffff;
+    width: calc(var(--vh, 1vh) * 8);
+    height: calc(var(--vh, 1vh) * 8);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    position: fixed;
+    right: calc(var(--vh, 1vh) * 2);
+    bottom: calc(var(--vh, 1vh) * 13);
+    font-size: 24px;
+    text-decoration: none;
+}
+
+
+.Bubbles .create-post-button:hover {
+    background-color: #00796b;
+}
+
+.Bubbles .load-more {
+    align-self: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    background-color: #4dd0e1;
+    color: #ffffff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+.Bubbles .load-more:hover {
+    background-color: #00796b;
+}

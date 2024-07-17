@@ -1,0 +1,98 @@
+
+        .signin {
+            font-family: 'RixInooAriDuriR';
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom right, #e0f7fa, #b3e5fc);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #004d40;
+        }
+        .signin .container {
+            text-align: center;
+            width: 90%;
+            max-width: 400px;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        .signin .logo {
+            background-color: #4dd0e1;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto 20px auto;
+            color: #ffffff;
+            font-size: 24px;
+            font-weight: bold;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .signin .tagline {
+            font-size: 18px;
+            margin-bottom: 20px;
+            color: #00796b;
+        }
+        .signin .input-group {
+            margin-bottom: 15px;
+        }
+        .signin .id {
+            width: calc(100% - 20px);
+            padding: 10px;
+            border: 1px solid #4dd0e1;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            font-size: 16px;
+            color: #004d40;
+            font-family: 'Cafe24Ssurround';
+        }
+        
+        .signin .pw {
+            width: calc(100% - 20px);
+            padding: 10px;
+            border: 1px solid #4dd0e1;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            font-size: 16px;
+            color: #004d40;
+        }
+
+        .signin .pw::placeholder {
+            
+            font-family: 'Cafe24Ssurround';
+        }
+
+        .signin .btn {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 10px;
+            background-color: #4dd0e1;
+            color: #ffffff;
+            font-size: 18px;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: background-color 0.3s;
+            font-family: 'Cafe24Ssurround';
+        }
+        .signin .btn:hover {
+            background-color: #00796b;
+        }
+        .signin .link-group {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+        }
+        .signin .link-group a {
+            text-decoration: none;
+            color: #00796b;
+            font-size: 14px;
+        }
+        .signin .link-group a:hover {
+            color: #004d40;
+        }

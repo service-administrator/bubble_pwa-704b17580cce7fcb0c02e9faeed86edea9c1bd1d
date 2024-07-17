@@ -1,0 +1,109 @@
+@keyframes user_indicator {
+    0% {
+    }
+    50% {
+        background-color: red;
+    }
+    100% {
+    }
+}
+
+
+.Bubble_New {
+    font-family: 'Cafe24Ssurround';
+}
+
+.Bubble_New .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    position: relative;
+}
+.Bubble_New .header h1 {
+    font-family: 'RixInooAriDuriR';
+    font-size: 24px;
+    margin: 0;
+}
+
+.Bubble_New .question-content {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: calc(var(--vh, 1vh) * 6);
+    margin-top: calc(var(--vh, 1vh) * 4);
+    text-align: center;
+    font-size: 18px;
+    
+}
+.Bubble_New .button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.Bubble_New .button {
+    background-color: #4dd0e1;
+    color: #ffffff;
+    border-radius: 10px;
+    font-size: 20px;
+    width: calc(var(--vh, 1vh) * 20);
+    height: calc(var(--vh, 1vh) * 10);
+    text-decoration: none;
+    display:flex;
+    text-align: center;
+    align-items:center;
+    justify-content:center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.Bubble_New .others-profile {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: calc(var(--vh, 1vh) * 5);;
+}
+.Bubble_New .profile {
+    width: calc(50% - 10px);
+    text-align: center;
+    margin-bottom: 20px;
+    border-radius: 10%;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    background-color: white;
+    transition: background-color 0.5s ease;
+}
+
+.Bubble_New .profile.clicked {
+    background-color: yellow;
+}
+
+.Bubble_New .profile .avatar {
+    background-color: #4dd0e1;
+    width: calc(var(--vh, 1vh) * 10);
+    height: calc(var(--vh, 1vh) * 10);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0 auto 5px;
+}
+
+.avatar img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    overflow:hidden;
+    border-radius: 50%;
+}
+
+.Bubble_New .profile p {
+    margin: 0;
+    font-size: 18px;
+}

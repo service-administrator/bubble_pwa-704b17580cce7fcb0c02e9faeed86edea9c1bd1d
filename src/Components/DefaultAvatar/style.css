@@ -1,0 +1,11 @@
+.default-avatar {
+  width: 40px; /* 너비 조정 */
+  height: 40px; /* 높이 조정 */
+  border-radius: 50%;
+  background-color: #4dd0e1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  cursor: pointer;
+}

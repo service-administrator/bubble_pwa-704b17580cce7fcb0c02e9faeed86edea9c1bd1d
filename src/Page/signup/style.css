@@ -1,0 +1,199 @@
+/* style.css */
+
+.SignUp {
+    font-family: 'Cafe24Ssurround';
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  
+  .SignUp .container {
+    width: calc(100% - 30px);
+    max-width: 400px;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 15px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+    margin-top: 0.3vh;
+    height: calc(var(--vh, 1vh) * 85);
+    overflow: hidden;
+  }
+  
+  .SignUp h1 {
+    font-family: 'RixInooAriDuriR';
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .SignUp .form-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 800%;
+  }
+
+  .SignUp input[type="text"], 
+  .SignUp input[type="password"] {
+      align-self: flex-start;
+      padding: calc(var(--vh, 1vh) * 1.5);
+      border: none;
+      border-radius: calc(var(--vh, 1vh) * 3);
+      width: 55%;
+      height: calc(var(--vh, 1vh) * 3);
+      font-size: calc(var(--vh, 1vh) * 2);
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .SignUp input[type="text"] {
+      font-family: 'Cafe24Ssurround';
+  }
+
+  .SignUp input[type="password"] {
+    font-family: 'some-other-font', sans-serif;
+}
+  
+  .SignUp .form-step {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0 20px;
+  }
+  
+  .SignUp .form-step > * {
+    margin-bottom: 15px;
+  }
+
+  .SignUp .navigator {
+    display: flex;
+    font-family: 'RixInooAriDuriR';
+    justify-content: space-between;
+  }
+  
+  
+  .SignUp button {
+    font-family: 'RixInooAriDuriR';
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4dd0e1;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+  }
+  
+  .SignUp button:hover {
+    background-color: #00796b;
+  }
+
+  /* style.css */
+
+/* ... */
+
+.SignUp .gender-radio {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    width: 60%;
+    align-self: flex-start;
+  }
+  
+  .SignUp .gender-radio label {
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+    cursor: pointer;
+    font-family: 'Cafe24Ssurround';
+  }
+  
+  .SignUp .gender-radio input[type="radio"] {
+    display: none;
+  }
+  
+  .SignUp .gender-radio label::before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    border: 2px solid #4dd0e1;
+    border-radius: 50%;
+    margin-right: 8px;
+    transition: all 0.3s ease;
+  }
+  
+  .SignUp .gender-radio input[type="radio"]:checked + label::before {
+    background-color: #4dd0e1;
+    box-shadow: inset 0 0 0 4px #fff;
+  }
+  
+  .SignUp .gender-radio label:hover::before {
+    box-shadow: 0 0 5px #4dd0e1;
+  }
+  
+  .SignUp select {
+    align-self: flex-start;
+    border: none;
+    border-radius: calc(var(--vh, 1vh) * 3);
+    width: 60%;
+    height: calc(var(--vh, 1vh) * 4);
+    font-size: calc(var(--vh, 1vh) * 2);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+    text-align: center;
+    font-family: 'RixInooAriDuriR';
+  }
+  
+  .SignUp .phone-verification {
+    display: flex;
+    justify-content: space-between;
+    align-self: flex-start;
+    width: 60%;
+    margin-bottom: 15px;
+    gap: 1vw;
+  }
+
+  .SignUp .phone-verification input[type="text"] {
+    width: 70%;
+  }
+  
+  .SignUp .phone-verification button {
+    width: 30%;
+    margin-top: 0;
+    padding: 1vw;
+    font-size: calc(var(--vh, 1vh) * 1.5);
+    border-radius: 20px;
+  }
+
+  /* style.css */
+
+/* ... (기존 스타일은 유지) */
+
+.SignUp .step-info {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .SignUp .step-title {
+    font-family: 'RixInooAriDuriR';
+    font-size: calc(var(--vh, 1vh) * 2.5);
+    margin-bottom: 5px;
+    color: #4dd0e1;
+  }
+  
+  .SignUp .step-progress {
+    font-family: 'Cafe24Ssurround';
+    font-size: calc(var(--vh, 1vh) * 1.8);
+    color: #757575;
+  }
+
+  .SignUp .error-message {
+    color: #ff3d00;
+    font-size: calc(var(--vh, 1vh) * 1.8);
+    margin-bottom: 10px;
+    font-family: 'Cafe24Ssurround';
+  }

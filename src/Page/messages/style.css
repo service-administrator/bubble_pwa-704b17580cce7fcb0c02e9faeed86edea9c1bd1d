@@ -1,0 +1,123 @@
+
+.Messages {
+    font-family: 'Cafe24Ssurround';
+}
+
+.Messages .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    position: relative;
+}
+.Messages .header h1 {
+    font-family: 'RixInooAriDuriR';
+    font-size: 24px;
+    margin: 0;
+}
+.Messages .settings {
+    background-color: #4dd0e1;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 14px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    text-decoration: none;
+}
+
+.Messages .container .messages-container{
+    
+    width: calc(100%);
+    overflow-y: scroll; /* 내용이 길어질 경우 스크롤 */
+    height: calc(var(--vh, 1vh) * 80); /* 화면 대부분 차지 */  
+}
+.Messages .messages-container::-webkit-scrollbar {
+    width: 8px;
+}
+.Messages .messages-container::-webkit-scrollbar-thumb {
+    background-color: #4dd0e1;
+    border-radius: 4px;
+}
+.Messages .messages-container::-webkit-scrollbar-track {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.Messages .nomsg{
+    text-align: center;
+    opacity: 0.5;
+    font-size: x-large;
+}
+
+
+.Messages .message {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 15px;
+    position: relative;
+}
+.Messages .avatar {
+    background-color: #4dd0e1;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 15px;
+}
+.Messages .message-info {
+    flex: 1;
+    position: relative;
+}
+.Messages .name {
+    display: flex;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0;
+}
+.Messages .username {
+    display: flex;
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.6);
+    margin-left: 5px;
+}
+.Messages .text {
+    font-size: 16px;
+    color: #757575;
+    margin: 5px 0 0;
+    display: flex;
+}
+.Messages .time {
+    font-size: 14px;
+    color: #757575;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+.Messages .create-post-button {
+    background-color: #4dd0e1;
+    color: #ffffff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    position: fixed;
+    right: 10px;
+    bottom: 120px;
+    font-size: 24px;
+    text-decoration: none;
+}
+.Messages .create-post-button:hover {
+    background-color: #00796b;
+}
+

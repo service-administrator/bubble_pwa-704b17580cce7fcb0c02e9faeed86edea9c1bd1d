@@ -1,0 +1,141 @@
+
+/* style.css */
+
+/* ... */
+
+.Notification {
+    font-family: 'Cafe24Ssurround';
+  }
+  
+  
+  .Notification .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    position: relative;
+  }
+  .Notification .back-button {
+    background-color: #4dd0e1;
+    color: #ffffff;
+    padding: 10px;
+    width: calc(var(--vh, 1vh) * 2.5);
+    height: calc(var(--vh, 1vh) * 2.5);
+    border-radius: 50%;
+    font-size: 14px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    text-align: center;
+}
+  
+  .Notification .header h1 {
+    font-family: 'RixInooAriDuriR';
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  .Notification .notification-list {
+    width: 100%;
+    overflow-y: scroll;
+    height: calc(var(--vh, 1vh) * 75);
+  }
+  
+  .Notification .notification-list::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  .Notification .notification-list::-webkit-scrollbar-thumb {
+    background-color: #4dd0e1;
+    border-radius: 4px;
+  }
+  
+  .Notification .notification-list::-webkit-scrollbar-track {
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+  
+/* style.css */
+
+/* ... */
+
+.Notification .notification-item {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    text-align: left;
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  .Notification .notification-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .Notification .notification-content {
+    flex: 1;
+  }
+  
+  .Notification .notification-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5px;
+  }
+  
+  .Notification .notification-type {
+    font-weight: bold;
+  }
+  
+  .Notification .notification-actions {
+    display: flex;
+    margin-left: 10px;
+  }
+  
+  .Notification .notification-actions button {
+    background-color: #4dd0e1;
+    color: #ffffff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Cafe24Ssurround';
+    margin-left: 5px;
+  }
+  
+
+  
+.Notification .notification-text {
+  font-size: 16px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.Notification .notification-title {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.Notification .notification-desc {
+  color: #757575;
+}
+  
+  .Notification .notification-time {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 12px;
+    color: #757575;
+  }
+
+
+  
+
+  
+
+  
+  /* ... */

@@ -1,0 +1,84 @@
+/* style.css에 추가 */
+
+.SignIn {
+    font-family: 'Cafe24Ssurround';
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .SignIn .container {
+    width: calc(100% - 30px);
+    max-width: 400px;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 15px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .SignIn h1 {
+    font-family: 'RixInooAriDuriR';
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #4dd0e1;
+  }
+  
+  .SignIn form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .SignIn input {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .SignIn .error-message {
+    color: #ff3d00;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  
+  .SignIn .navigator {
+    margin-top: 20px;
+  }
+  
+  .SignIn button {
+    font-family: 'RixInooAriDuriR';
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4dd0e1;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 16px;
+  }
+  
+  .SignIn button:hover {
+    background-color: #00796b;
+  }
+  
+  .SignIn .signup-link {
+    margin-top: 20px;
+    font-size: 14px;
+  }
+  
+  .SignIn .signup-link span {
+    color: #4dd0e1;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+
+  .SignIn input[type="password"] {
+    font-family: 'some-other-font', sans-serif;
+  }

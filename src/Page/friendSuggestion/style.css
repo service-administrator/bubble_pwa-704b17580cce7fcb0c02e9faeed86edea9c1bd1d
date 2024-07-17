@@ -1,0 +1,96 @@
+.FriendSuggestions {
+    font-family: 'Cafe24Ssurround';
+  }
+  
+  .FriendSuggestions .suggestions-container {
+    width: calc(100%);
+    overflow-y: scroll;
+    height: calc(var(--vh, 1vh) * 80);
+  }
+  
+  .FriendSuggestions .suggestions-container::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  .FriendSuggestions .suggestions-container::-webkit-scrollbar-thumb {
+    background-color: #4dd0e1;
+    border-radius: 4px;
+  }
+  
+  .FriendSuggestions .suggestions-container::-webkit-scrollbar-track {
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+  
+  .FriendSuggestions .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    position: relative;
+}
+.FriendSuggestions .header h1 {
+    font-family: 'RixInooAriDuriR';
+    font-size: 24px;
+    margin: 0;
+}
+  
+  .FriendSuggestions .category {
+    margin-bottom: 20px;
+  }
+  
+  .FriendSuggestions .category h2 {
+    font-family: 'RixInooAriDuriR';
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .FriendSuggestions .friend-suggestion-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  .FriendSuggestions .friend-info {
+    display: flex;
+    align-items: center;
+  }
+  
+  .FriendSuggestions .friend-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .FriendSuggestions .friend-details {
+    display: flex;
+    flex-direction: column;
+  }
+
+
+.FriendSuggestions .friend-name {
+    font-weight: bold;
+    align-self: self-start;
+  }
+  
+  .FriendSuggestions .friend-username {
+    color: #757575;
+    align-self: self-start;
+  }
+  
+  .FriendSuggestions .friend-grade-class {
+    color: #757575;
+  }
+
+  .FriendSuggestions button {
+    padding: 8px 16px;
+    background-color: #4dd0e1;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    font-family: 'RixInooAriDuriR';
+  }

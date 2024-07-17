@@ -1,0 +1,117 @@
+
+.Bubble_Info {
+    font-family: 'Cafe24Ssurround';
+}
+
+.Bubble_Info .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    position: relative;
+}
+.Bubble_Info .header h1 {
+    font-family: 'RixInooAriDuriR';
+    font-size: 24px;
+    margin: 0;
+}
+
+
+.Bubble_Info .question-from {
+    font-family: 'RixInooAriDuriR';
+    text-align: center;
+    margin-top: calc(var(--vh, 1vh) * 5);
+    font-size: 25px;
+    font-weight: 300;
+    color: #00796b;
+}
+
+.Bubble_Info .question-content {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: calc(var(--vh, 1vh) * 6);
+    margin-top: calc(var(--vh, 1vh) * 4);
+    text-align: center;
+    font-size: 18px;
+}
+.Bubble_Info .button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: calc(var(--vh, 1vh) * 4);
+}
+.Bubble_Info .button {
+    background-color: #4dd0e1;
+    color: #ffffff;
+    border-radius: 10px;
+    font-size: calc(var(--vh, 1vh) * 2.5);
+    width: calc(var(--vh, 1vh) * 30);
+    height: calc(var(--vh, 1vh) * 10);
+    text-decoration: none;
+    display:flex;
+    text-align: center;
+    align-items:center;
+    justify-content:center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.Bubble_Info .others-profile {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 5vh;
+}
+.Bubble_Info .profile {
+    width: calc(50% - 10px);
+    text-align: center;
+    margin-bottom: 20px;
+    border-radius: 10%;
+    padding-top: calc(var(--vh, 1vh) * 1);
+    padding-bottom: calc(var(--vh, 1vh) * 1);
+    background-color: white;
+    transition: background-color 0.5s ease;
+}
+
+.Bubble_Info .profile.clicked {
+    background-color: yellow;
+}
+
+.Bubble_Info .profile .avatar {
+    background-color: #4dd0e1;
+    width: calc(var(--vh, 1vh) * 10);
+    height: calc(var(--vh, 1vh) * 10);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0 auto 5px;
+}
+
+.avatar img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    overflow:hidden;
+    border-radius: 50%;
+}
+
+.Bubble_Info .profile p {
+    margin: 0;
+    font-size: 18px;
+}
+
+.Bubble_Info .delFav {
+    background-color: #f44336;
+}
+
+
+.Bubble_Info button{
+    border: none;
+}
